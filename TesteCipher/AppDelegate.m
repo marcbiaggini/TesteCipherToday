@@ -16,7 +16,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
     return YES;
 }
 
@@ -40,6 +40,72 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)getImage
+{
+    
+    NSString * ws=[NSString stringWithFormat:@"%@",@"http://tmp.eidoscode.com/cipher/ws.json"];
+    // Inicializa o objeto de URL
+    NSURL *url = [[NSURL alloc] initWithString:[ws stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+    // Faz a request ao webservice
+    [NSURLConnection sendAsynchronousRequest:[[NSURLRequest alloc] initWithURL:url] queue:[[NSOperationQueue alloc] init] completionHandler:^(NSURLResponse *response, NSData *data, NSError *error)
+     {
+         // Verifica se a chamada foi realizada com erros
+         if (error)
+         {
+             
+             // Exibe mensagem de erro (problemas na chamada)
+             
+         }
+         else
+         {
+             
+             NSDictionary *parsedObject = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
+             NSDictionary *conteudoList = [parsedObject objectForKey:@"conteudo"];
+             
+             if([conteudoList isKindOfClass:[NSArray class]]){
+                 
+                 NSMutableArray *values = [[NSMutableArray alloc] init];
+                 values = [conteudoList mutableCopy];
+                 bool swapped = YES;
+                 while (swapped){
+                     swapped = NO;
+                     for (int i=0; i<values.count;i++)
+                     {
+                         if (i < values.count-1){
+                             
+                             NSDictionary *currentIndexValue = [values objectAtIndex:i];
+                             NSDictionary *nextIndexValue    = [values objectAtIndex:i+1];
+                             
+                             if ([[currentIndexValue objectForKey:@"valor"] doubleValue]  > [[nextIndexValue objectForKey:@"valor"] doubleValue]){
+                                 swapped = YES;
+                                 [self swapFirstIndex:i withSecondIndex:i+1 inMutableArray:values];
+                             }
+                         }
+                         
+                     }
+                 }
+                 
+                 [[NSUserDefaults standardUserDefaults] setObject:values forKey:@"Information"];
+                 
+                 
+             }
+         }
+         
+         
+     }];
+    
+    
+}
+
+-(void)swapFirstIndex:(NSUInteger)firstIndex withSecondIndex:(NSUInteger)secondIndex inMutableArray:(NSMutableArray*)array{
+    
+    NSDictionary* valueAtFirstIndex = array[firstIndex];
+    NSDictionary* valueAtSecondIndex = array[secondIndex];
+    
+    [array replaceObjectAtIndex:firstIndex withObject:valueAtSecondIndex];
+    [array replaceObjectAtIndex:secondIndex withObject:valueAtFirstIndex];
 }
 
 @end

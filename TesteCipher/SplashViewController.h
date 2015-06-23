@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  ViewController.h
 //  TesteCipher
 //
 //  Created by TVTiOS-01 on 22/06/15.
@@ -8,11 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "NetworkConnectionMonitor.h"
+#import "BusyIndicatorController.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
 
-@property (strong, nonatomic) UIWindow *window;
+@interface SplashViewController : UIViewController
 @property (strong,nonatomic) NetworkConnectionMonitor *networkMonitor;
+@property (strong,nonatomic)  NSMutableArray *dataList;
+@property (strong, nonatomic) UIActivityIndicatorView *busyView ;
 
 
 @end

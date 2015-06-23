@@ -9,11 +9,15 @@
 /* Begin PBXBuildFile section */
 		319EE2A71B384E05005CB637 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 319EE2A61B384E05005CB637 /* main.m */; };
 		319EE2AA1B384E05005CB637 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 319EE2A91B384E05005CB637 /* AppDelegate.m */; };
-		319EE2AD1B384E05005CB637 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 319EE2AC1B384E05005CB637 /* ViewController.m */; };
+		319EE2AD1B384E05005CB637 /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 319EE2AC1B384E05005CB637 /* SplashViewController.m */; };
 		319EE2B01B384E05005CB637 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 319EE2AE1B384E05005CB637 /* Main.storyboard */; };
 		319EE2B21B384E05005CB637 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 319EE2B11B384E05005CB637 /* Images.xcassets */; };
 		319EE2B51B384E05005CB637 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 319EE2B31B384E05005CB637 /* LaunchScreen.xib */; };
 		319EE2C11B384E05005CB637 /* TesteCipherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 319EE2C01B384E05005CB637 /* TesteCipherTests.m */; };
+		319EE2CF1B387FF6005CB637 /* BusyIndicatorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 319EE2CE1B387FF6005CB637 /* BusyIndicatorController.m */; };
+		319EE2D41B388049005CB637 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 319EE2D21B388049005CB637 /* Reachability.m */; };
+		319EE2D71B38805B005CB637 /* NetworkConnectionMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 319EE2D61B38805B005CB637 /* NetworkConnectionMonitor.m */; };
+		319EE2DB1B389862005CB637 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 319EE2DA1B389862005CB637 /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +36,23 @@
 		319EE2A61B384E05005CB637 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		319EE2A81B384E05005CB637 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		319EE2A91B384E05005CB637 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		319EE2AB1B384E05005CB637 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		319EE2AC1B384E05005CB637 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		319EE2AB1B384E05005CB637 /* SplashViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplashViewController.h; sourceTree = "<group>"; };
+		319EE2AC1B384E05005CB637 /* SplashViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SplashViewController.m; sourceTree = "<group>"; };
 		319EE2AF1B384E05005CB637 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		319EE2B11B384E05005CB637 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		319EE2B41B384E05005CB637 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		319EE2BA1B384E05005CB637 /* TesteCipherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TesteCipherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		319EE2BF1B384E05005CB637 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		319EE2C01B384E05005CB637 /* TesteCipherTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TesteCipherTests.m; sourceTree = "<group>"; };
+		319EE2CD1B387FF6005CB637 /* BusyIndicatorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusyIndicatorController.h; sourceTree = "<group>"; };
+		319EE2CE1B387FF6005CB637 /* BusyIndicatorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusyIndicatorController.m; sourceTree = "<group>"; };
+		319EE2D11B388049005CB637 /* Reachability-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Reachability-Prefix.pch"; sourceTree = "<group>"; };
+		319EE2D21B388049005CB637 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		319EE2D31B388049005CB637 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		319EE2D51B38805B005CB637 /* NetworkConnectionMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkConnectionMonitor.h; sourceTree = "<group>"; };
+		319EE2D61B38805B005CB637 /* NetworkConnectionMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkConnectionMonitor.m; sourceTree = "<group>"; };
+		319EE2D91B389862005CB637 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		319EE2DA1B389862005CB637 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +94,13 @@
 		319EE2A31B384E05005CB637 /* TesteCipher */ = {
 			isa = PBXGroup;
 			children = (
+				319EE2D01B387FFB005CB637 /* Components */,
 				319EE2A81B384E05005CB637 /* AppDelegate.h */,
 				319EE2A91B384E05005CB637 /* AppDelegate.m */,
-				319EE2AB1B384E05005CB637 /* ViewController.h */,
-				319EE2AC1B384E05005CB637 /* ViewController.m */,
+				319EE2D91B389862005CB637 /* ViewController.h */,
+				319EE2DA1B389862005CB637 /* ViewController.m */,
+				319EE2AB1B384E05005CB637 /* SplashViewController.h */,
+				319EE2AC1B384E05005CB637 /* SplashViewController.m */,
 				319EE2AE1B384E05005CB637 /* Main.storyboard */,
 				319EE2B11B384E05005CB637 /* Images.xcassets */,
 				319EE2B31B384E05005CB637 /* LaunchScreen.xib */,
@@ -117,6 +133,28 @@
 				319EE2BF1B384E05005CB637 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		319EE2D01B387FFB005CB637 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				319EE2D81B3880BE005CB637 /* Third Party */,
+				319EE2CD1B387FF6005CB637 /* BusyIndicatorController.h */,
+				319EE2CE1B387FF6005CB637 /* BusyIndicatorController.m */,
+				319EE2D51B38805B005CB637 /* NetworkConnectionMonitor.h */,
+				319EE2D61B38805B005CB637 /* NetworkConnectionMonitor.m */,
+			);
+			name = Components;
+			sourceTree = "<group>";
+		};
+		319EE2D81B3880BE005CB637 /* Third Party */ = {
+			isa = PBXGroup;
+			children = (
+				319EE2D11B388049005CB637 /* Reachability-Prefix.pch */,
+				319EE2D21B388049005CB637 /* Reachability.m */,
+				319EE2D31B388049005CB637 /* Reachability.h */,
+			);
+			name = "Third Party";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +206,7 @@
 				TargetAttributes = {
 					319EE2A01B384E05005CB637 = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = FQN6Y4SF92;
 					};
 					319EE2B91B384E05005CB637 = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -219,9 +258,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				319EE2AD1B384E05005CB637 /* ViewController.m in Sources */,
+				319EE2DB1B389862005CB637 /* ViewController.m in Sources */,
+				319EE2CF1B387FF6005CB637 /* BusyIndicatorController.m in Sources */,
+				319EE2D71B38805B005CB637 /* NetworkConnectionMonitor.m in Sources */,
+				319EE2AD1B384E05005CB637 /* SplashViewController.m in Sources */,
 				319EE2AA1B384E05005CB637 /* AppDelegate.m in Sources */,
 				319EE2A71B384E05005CB637 /* main.m in Sources */,
+				319EE2D41B388049005CB637 /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,9 +392,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = TesteCipher/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -359,9 +404,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = TesteCipher/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
